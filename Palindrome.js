@@ -56,23 +56,57 @@
 
 // console.log(isPalindrome([7, 8, 9, 8, 7]));
 
-var isPalindrome = function (x) {
-  let str = x.toString();
+// var isPalindrome = function (x) {
+//   let str = x.toString();
+//   let left = 0;
+//   let right = str.length - 1;
+
+//   while (right > left) {
+//     if (str[left] !== str[right]) {
+//       return false;
+//     }
+
+//     left++;
+//     right--;
+//   }
+
+//   return true;
+// };
+
+// console.log(isPalindrome(-121)); // false
+// console.log(isPalindrome(10)); // false
+// console.log(isPalindrome(121)); // true
+
+// function palindrome(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left < right) {
+//     if (arr[left] !== arr[right]) {
+//       return false;
+//     } else {
+//       left++;
+//       right--;
+//     }
+//   }
+//   return true;
+// }
+
+// let arr = [1, 2, 3, 2, 1];
+// console.log(palindrome(arr));
+
+function palindrome(arr) {
   let left = 0;
-  let right = str.length - 1;
-
-  while (right > left) {
-    if (str[left] !== str[right]) {
+  let right = arr.length - 1;
+  while (left < right) {
+    if (arr[left] !== arr[right]) {
       return false;
+    } else {
+      left++;
+      right--;
     }
-
-    left++;
-    right--;
   }
-
   return true;
-};
+}
 
-console.log(isPalindrome(-121)); // false
-console.log(isPalindrome(10)); // false
-console.log(isPalindrome(121)); // true
+let arr = [1, 2, 3, 2, 1];
+console.log(palindrome(arr));

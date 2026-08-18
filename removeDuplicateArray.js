@@ -35,10 +35,32 @@
 
 // console.log(uniqueArr);
 
-function removeDuplicates(arr) {
+// function removeDuplicates(arr) {
+//   let left = 0;
+//   let right = 1;
+
+//   while (right < arr.length) {
+//     if (arr[left] === arr[right]) {
+//       right++;
+//     } else {
+//       left++;
+//       arr[left] = arr[right];
+//       right++;
+//     }
+//   }
+
+//   let uniqueArr = arr.slice(0, left + 1);
+
+//   return uniqueArr;
+// }
+
+// let arr = [1, 1, 2, 2, 3, 3, 4];
+
+// console.log(removeDuplicates(arr));
+
+function removeDuplicate(arr) {
   let left = 0;
   let right = 1;
-
   while (right < arr.length) {
     if (arr[left] === arr[right]) {
       right++;
@@ -48,12 +70,10 @@ function removeDuplicates(arr) {
       right++;
     }
   }
-
-  let uniqueArr = arr.slice(0, left + 1);
-
-  return uniqueArr;
+  let unique = arr.slice(0, left + 1);
+  return unique;
 }
 
 let arr = [1, 1, 2, 2, 3, 3, 4];
 
-console.log(removeDuplicates(arr));
+console.log(removeDuplicate(arr));
