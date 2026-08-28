@@ -24,11 +24,34 @@
 // }
 // console.log(arraryReverse([1, 2, 3, 4, 5]));
 
-function stringReverse(str) {
+// function stringReverse(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed = reversed + str[i];
+//   }
+//   return reversed;
+// }
+// console.log(stringReverse("shakib"));
+
+// function stringReverse(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(stringReverse("12345"));
+
+function numberReverse(num) {
+  let str = num.toString();
   let reversed = "";
+
   for (let i = str.length - 1; i >= 0; i--) {
-    reversed = reversed + str[i];
+    reversed += str[i];
   }
-  return reversed;
+
+  return Number(reversed);
 }
-console.log(stringReverse("shakib"));
+
+console.log(numberReverse(12345));
