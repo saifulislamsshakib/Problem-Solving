@@ -63,18 +63,65 @@
 // let arr = [10, 20, 30, 1, 5];
 // console.log(twoPointer(arr));
 
-function twoPointer() {
+// function twoPointer() {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left < right) {
+//     let tepm = arr[left];
+//     arr[left] = arr[right];
+//     arr[right] = tepm;
+//     left++;
+//     right--;
+//   }
+//   return arr;
+// }
+
+// let arr = [10, 20, 30, 1, 5];
+// console.log(twoPointer(arr));
+
+// function twoPointers(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left < right) {
+//     let temp = arr[left];
+//     arr[left] = arr[right];
+//     arr[right] = temp;
+//     left++;
+//     right--;
+//   }
+//   return arr;
+// }
+// let arr = [10, 20, 30, 1, 5];
+// console.log(twoPointers(arr));
+
+// function twoPointers(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (right > left) {
+//     let temp = arr[left];
+//     arr[left] = arr[right];
+//     arr[right] = temp;
+//     left++;
+//     right--;
+//   }
+//   return arr;
+// }
+
+// let arr = [10, 20, 30, 1, 5];
+// console.log(twoPointers(arr));
+
+function twoPointers(arr) {
   let left = 0;
   let right = arr.length - 1;
+
   while (left < right) {
-    let tepm = arr[left];
-    arr[left] = arr[right];
-    arr[right] = tepm;
+    let temp = arr[right];
+    arr[right] = arr[left];
+    arr[left] = temp;
     left++;
     right--;
   }
   return arr;
 }
-
 let arr = [10, 20, 30, 1, 5];
-console.log(twoPointer(arr));
+console.log(twoPointers(arr));

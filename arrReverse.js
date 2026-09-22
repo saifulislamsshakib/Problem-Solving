@@ -43,15 +43,15 @@
 
 // console.log(stringReverse("12345"));
 
-function numberReverse(num) {
-  let str = num.toString();
-  let reversed = "";
+// function numberReverse(num) {
+//   let str = num.toString();
+//   let reversed = "";
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
 
-  return Number(reversed);
-}
+//   return Number(reversed);
+// }
 
-console.log(numberReverse(12345));
+// console.log(numberReverse(12345));

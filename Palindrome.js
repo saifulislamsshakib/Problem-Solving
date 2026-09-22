@@ -94,15 +94,48 @@
 // let arr = [1, 2, 3, 2, 1];
 // console.log(palindrome(arr));
 
+// function palindrome(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left < right) {
+//     if (arr[left] !== arr[right]) {
+//       return false;
+//     } else {
+//       left++;
+//       right--;
+//     }
+//   }
+//   return true;
+// }
+
+// let arr = [1, 2, 3, 2, 1];
+// console.log(palindrome(arr));
+
+// function palindrome(arr) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (right > left) {
+//     if (arr[left] !== arr[right]) {
+//       return false;
+//     } else {
+//       left++;
+//       right--;
+//     }
+//   }
+//   return true;
+// }
+// let arr = [1, 2, 3, 2, 1];
+// console.log(palindrome(arr));
+
 function palindrome(arr) {
   let left = 0;
   let right = arr.length - 1;
   while (left < right) {
-    if (arr[left] !== arr[right]) {
-      return false;
-    } else {
+    if (arr[left] === arr[right]) {
       left++;
       right--;
+    } else {
+      return false;
     }
   }
   return true;

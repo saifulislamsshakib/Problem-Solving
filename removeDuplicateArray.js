@@ -58,6 +58,45 @@
 
 // console.log(removeDuplicates(arr));
 
+// function removeDuplicate(arr) {
+//   let left = 0;
+//   let right = 1;
+//   while (right < arr.length) {
+//     if (arr[left] === arr[right]) {
+//       right++;
+//     } else {
+//       left++;
+//       arr[left] = arr[right];
+//       right++;
+//     }
+//   }
+//   let unique = arr.slice(0, left + 1);
+//   return unique;
+// }
+
+// let arr = [1, 1, 2, 2, 3, 3, 4];
+
+// console.log(removeDuplicate(arr));
+
+// function removeDuplicate(arr) {
+//   let left = 0;
+//   let right = 1;
+
+//   while (right < arr.length) {
+//     if (arr[left] === arr[right]) {
+//       right++;
+//     } else {
+//       left++;
+//       arr[left] = arr[right];
+//       right++;
+//     }
+//   }
+//   return arr.slice(0, left + 1);
+// }
+// let arr = [1, 1, 2, 2, 3, 3, 4];
+
+// console.log(removeDuplicate(arr));
+
 function removeDuplicate(arr) {
   let left = 0;
   let right = 1;
@@ -70,8 +109,7 @@ function removeDuplicate(arr) {
       right++;
     }
   }
-  let unique = arr.slice(0, left + 1);
-  return unique;
+  return arr.slice(0, left + 1);
 }
 
 let arr = [1, 1, 2, 2, 3, 3, 4];
